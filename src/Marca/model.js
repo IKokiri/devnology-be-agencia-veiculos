@@ -1,10 +1,6 @@
-const db = require('../../models')
-const model = db.Marca
+const repository = require("./Repository/Repository")
 
 exports.create = (data) =>{
-    const result = model.create(data)
-    .then(function(retorno){
-        return retorno        
-    })
-    return result
+    return repository.create(data)
+    
 }

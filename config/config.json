@@ -16,7 +16,7 @@
   "production": {
     "username": "root",
     "password": "",
-    "database": "agencia_veiculos",
+    "database": "agencia_veiculos'",
     "host": "127.0.0.1",
     "dialect": "mysql"
   }

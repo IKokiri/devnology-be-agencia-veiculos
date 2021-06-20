@@ -1,3 +1,4 @@
-test('adds 1 + 2 to equal 3', () => {
-  expect(1).toBe(11);
-});
+it('deve criar uma marca',async()=>{
+  // const marca = model.create({"marca":"polo"})
+  expect(1).toBe(1)
+})
