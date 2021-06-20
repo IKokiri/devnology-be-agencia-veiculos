@@ -1,5 +1,5 @@
 const db = require('../../../models')
-const model = db.Produto
+const model = db.Compra
 
 exports.create = (data) => {
     const result = model.create(data)
@@ -40,3 +40,4 @@ exports.delete = (id) => {
     })
     return result
 }
+

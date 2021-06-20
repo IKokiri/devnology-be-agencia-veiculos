@@ -5,6 +5,7 @@ const marcaApi = require('./src/Marca/controller')
 const modeloApi = require('./src/Modelo/controller')
 const veiculoApi = require('./src/Veiculo/controller') 
 const produtoApi = require('./src/Produto/controller') 
+const compraApi = require('./src/Compra/controller') 
 
 const express = require('express')
 const app = express()
@@ -17,6 +18,7 @@ veiculoApi,
 marcaApi,
 modeloApi,
 produtoApi,
+compraApi,
 );
 
 app.listen(PORT,()=>{
