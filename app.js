@@ -1,6 +1,10 @@
 const marcaApi = require('./src/Marca/controller')
 const veiculoApi = require('./src/Veiculo/controller') 
 
+require('dotenv').config({
+path: process.env.NODE_ENV == 'test' ? '.env.test' : '.env'
+})
+
 const express = require('express')
 const app = express()
 const PORT = process.env.PORT || 4000
