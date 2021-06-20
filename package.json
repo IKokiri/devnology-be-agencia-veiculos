@@ -7,7 +7,7 @@
     "start": "node app.js",
     "dev": "SET NODE_ENV=development && nodemon app.js",
     "pretest": "",
-    "test": "SET NODE_ENV=test && sequelize db:migrate"
+    "test": "SET NODE_ENV=test && sequelize db:migrate && jest"
   },
   "repository": {
     "type": "git",
