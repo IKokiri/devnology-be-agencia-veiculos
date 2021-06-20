@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
-    "test": "jest"
+    "test": "sequelize db:migrate && jest"
   },
   "repository": {
     "type": "git",
