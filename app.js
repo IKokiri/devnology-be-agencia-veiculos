@@ -2,6 +2,7 @@ require('dotenv').config({
     path: process.env.NODE_ENV == 'test' ? '.env.test' : '.env'
 })
 const marcaApi = require('./src/Marca/controller')
+const modeloApi = require('./src/Modelo/controller')
 const veiculoApi = require('./src/Veiculo/controller') 
 
 const express = require('express')
@@ -12,7 +13,8 @@ const PORT = process.env.PORT || 4000
  */
 app.use('/agencia',express.json(),
 veiculoApi,
-marcaApi
+marcaApi,
+modeloApi,
 );
 
 app.listen(PORT,()=>{
