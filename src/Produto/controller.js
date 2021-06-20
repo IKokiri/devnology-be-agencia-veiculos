@@ -1,13 +1,13 @@
 const routes = require('express').Router()
 const model = require('./model')
-const recurso = 'veiculo'
+const recurso = 'produto'
 
 routes.post(`/v1/${recurso}`, async (req,res,next)=>{
     try{
         const obj = await model.create(req.body)
         res.status(201).json(obj)
     }catch(error){
-        res.status(500).json({"error":"o veiculo nao pode ser criada, contate o suporte."})
+        res.status(500).json({"error":"a produto nao pode ser criada, contate o suporte."})
     }
 })
 

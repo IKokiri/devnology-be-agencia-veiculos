@@ -4,6 +4,7 @@ require('dotenv').config({
 const marcaApi = require('./src/Marca/controller')
 const modeloApi = require('./src/Modelo/controller')
 const veiculoApi = require('./src/Veiculo/controller') 
+const produtoApi = require('./src/Produto/controller') 
 
 const express = require('express')
 const app = express()
@@ -15,6 +16,7 @@ app.use('/agencia',express.json(),
 veiculoApi,
 marcaApi,
 modeloApi,
+produtoApi,
 );
 
 app.listen(PORT,()=>{
