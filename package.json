@@ -4,7 +4,7 @@
   "description": "Backend agencia de veículos devnology",
   "main": "app.js",
   "scripts": {
-    "start": "SET NODE_ENV=development sequelize db:migrate && node app.js",
+    "start": "sequelize db:migrate && node app.js",
     "dev": "SET NODE_ENV=development && sequelize db:migrate && nodemon app.js",
     "pretest": "SET NODE_ENV=test && sequelize db:migrate:undo:all",
     "test": "SET NODE_ENV=test && sequelize db:migrate && jest",
