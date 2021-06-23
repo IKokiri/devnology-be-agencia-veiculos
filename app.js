@@ -10,6 +10,7 @@ const vendaApi = require('./src/Venda/controller')
 const funcionarioApi = require('./src/Funcionario/controller') 
 const clienteApi = require('./src/Cliente/controller') 
 const estoqueApi = require('./src/Estoque/controller') 
+const comissaoApi = require('./src/Comissao/controller') 
 
 const express = require('express')
 const app = express()
@@ -27,6 +28,7 @@ vendaApi,
 funcionarioApi,
 clienteApi,
 estoqueApi,
+comissaoApi,
 );
 
 app.listen(PORT,()=>{
