@@ -8,7 +8,7 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      id_veiculo: {
+      id_produto: {
         type: Sequelize.INTEGER
       },
       createdAt: {

@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   Estoque.init({
-    id_veiculo: DataTypes.INTEGER
+    id_produto: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'Estoque',

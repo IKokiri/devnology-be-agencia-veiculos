@@ -18,7 +18,7 @@ exports.findAll = () => {
 }
 
 exports.findByPk = (pk) => {
-    const result = model.findOne({ where: { "id_veiculo": pk } })
+    const result = model.findOne({ where: { "id_produto": pk } })
         .then(function (retorno) {
             return retorno
         })
@@ -26,7 +26,7 @@ exports.findByPk = (pk) => {
 }
 
 exports.delete = (id) => {
-    const result = model.destroy({ where: { id_veiculo: id } })
+    const result = model.destroy({ where: { id_produto: id } })
         .then(function (retorno) {
             return retorno
         })
