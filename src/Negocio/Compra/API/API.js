@@ -1,6 +1,9 @@
 const fetch = require("node-fetch");
-const port = 4000
-const base = `http://localhost:${port}/agencia/v1/`
+require('dotenv').config({
+    path: process.env.NODE_ENV.trim() === 'test' ? '.env.test' : process.env.NODE_ENV.trim() === 'development' ? '.env' : '.env.prod'
+})
+
+const base = process.env.SERVER
 
 exports.createCompra = async (data) =>{
     const response = await fetch(`${base}compra/`, {

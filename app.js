@@ -1,6 +1,7 @@
 require('dotenv').config({
-    path: process.env.NODE_ENV == 'test' ? '.env.test' : '.env'
+    path: process.env.NODE_ENV.trim() === 'test' ? '.env.test' : process.env.NODE_ENV.trim() === 'development' ? '.env' : '.env.prod'
 })
+
 const marcaApi = require('./src/Marca/controller')
 const modeloApi = require('./src/Modelo/controller')
 const veiculoApi = require('./src/Veiculo/controller')
