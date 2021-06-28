@@ -13,6 +13,7 @@ const clienteApi = require('./src/Cliente/controller')
 const estoqueApi = require('./src/Estoque/controller')
 const comissaoApi = require('./src/Comissao/controller')
 const comprarApi = require('./src/Negocio/Compra/controller')
+const venderApi = require('./src/Negocio/Venda/controller')
 
 var cors = require('cors');
 
@@ -34,6 +35,7 @@ app.use('/agencia', cors(), express.json(),
     estoqueApi,
     comissaoApi,
     comprarApi,
+    venderApi,
 );
 
 app.listen(PORT, () => {

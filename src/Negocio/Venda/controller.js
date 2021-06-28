@@ -1,6 +1,6 @@
 const routes = require('express').Router()
 const model = require('./model')
-const recurso = 'comprar'
+const recurso = 'vender'
 
 routes.post(`/v1/${recurso}`, async (req, res, next) => {
     try {

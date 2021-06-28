@@ -13,4 +13,10 @@ exports.create = async (data) => {
     return result
 }
 
+exports.findAll = async () => {
+    
+    let result = await api.findAllCompra()
+    return result
+}
+
 

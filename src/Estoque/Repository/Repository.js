@@ -32,4 +32,3 @@ exports.delete = (id) => {
         })
     return result
 }
-

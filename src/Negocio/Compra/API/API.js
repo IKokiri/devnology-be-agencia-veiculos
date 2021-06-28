@@ -23,7 +23,6 @@ exports.createCompra = async (data) =>{
     return response;
 }
 
-
 exports.addEstoque = async (data) =>{
     const response = await fetch(`${base}estoque/`, {
         method: 'POST',
@@ -42,26 +41,22 @@ exports.addEstoque = async (data) =>{
     return response;
 }
 
-    // static async create(data) {
-        // response = 1
-        // const response = await fetch(`${base}compra/`, {
-        //     method: 'POST',
-        //     headers: {
-        //         'Accept': 'application/json',
-        //         'Content-Type': 'application/json'
-        //     },
-        //     body: JSON.stringify(data)
-        // })
-        //     .then(response => response.json())
-        //     .then(data => {
-        //         return data
-        //     })
-        //     .catch(console.error);
 
-        // return response;
+exports.findAllCompra = async () =>{
+    const response = await fetch(`${base}compra/`, {
+        method: 'GET',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        }
+    })
+        .then(response => response.json())
+        .then(data => {
+            return data
+        })
+        .catch(console.error);
 
-    // }
+    return response;
+}
 
-
-
-// }
+   
